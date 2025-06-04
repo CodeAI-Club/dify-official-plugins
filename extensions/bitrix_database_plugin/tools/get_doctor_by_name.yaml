@@ -1,0 +1,13 @@
+identity:
+  name: get_doctor_by_name
+  author: bitrix-integration
+  label:
+    en_US: Get Doctor By Name
+    zh_Hans: 通过姓名查医生
+parameters:
+  - name: doctor_name
+    type: string
+    required: true
+extra:
+  python:
+    source: tools/get_doctor_by_name.py

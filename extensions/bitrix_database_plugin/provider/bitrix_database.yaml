@@ -1,0 +1,34 @@
+identity:
+  author: bitrix-integration
+  name: bitrix_database
+  label:
+    en_US: Bitrix Database
+    zh_Hans: Bitrix 数据库
+  description:
+    en_US: Access Bitrix medical database
+    zh_Hans: 访问 Bitrix 医疗数据库
+  icon: icon.svg
+credentials_for_provider:
+  database_host:
+    type: text-input
+    required: true
+  database_port:
+    type: text-input
+    required: true
+    default: '3306'
+  database_name:
+    type: text-input
+    required: true
+  database_user:
+    type: text-input
+    required: true
+  database_password:
+    type: secret-input
+    required: true
+  use_ssl:
+    type: boolean
+    required: false
+    default: false
+extra:
+  python:
+    source: provider/bitrix_database.py
