@@ -1,0 +1,27 @@
+version: 0.0.1
+type: plugin
+author: bitrix-integration
+name: bitrix-database
+label:
+  en_US: Bitrix Database
+  zh_Hans: Bitrix 数据库
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/bitrix_database.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: '3.12'
+    entrypoint: main
+created_at: 2025-04-23T00:00:00+00:00
+privacy: PRIVACY.md

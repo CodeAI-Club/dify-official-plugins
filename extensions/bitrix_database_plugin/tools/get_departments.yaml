@@ -1,0 +1,10 @@
+identity:
+  name: get_departments
+  author: bitrix-integration
+  label:
+    en_US: Get Departments
+    zh_Hans: 获取部门
+parameters: []
+extra:
+  python:
+    source: tools/get_departments.py

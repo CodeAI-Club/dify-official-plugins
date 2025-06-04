@@ -1,0 +1,10 @@
+settings:
+  - name: database_url
+    type: text-input
+    required: true
+    label:
+      en_US: Database URL
+    placeholder:
+      en_US: postgresql://user:pass@host/dbname
+endpoints:
+  - endpoints/query.yaml
